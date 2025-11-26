@@ -1,0 +1,19 @@
+{
+  "name": "web_security_validator",
+  "version": "0.2.0",
+  "description": "Validador de seguridad web y analizador de cookies (MCP).",
+  "tools": [
+    {
+      "name": "scan_security",
+      "description": "Escanea una URL y devuelve resultados de seguridad y cookies.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" },
+          "generate_pdf": { "type": "boolean" }
+        },
+        "required": ["url"]
+      }
+    }
+  ]
+}
